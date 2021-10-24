@@ -1,0 +1,18 @@
+{
+    "orders": [
+        {
+            "item": "Graphic Card MSI NVIDIA GeForce RTX 3060",
+            "quantity": 1,
+            "price": 81740,
+            "buyer": "Sad Man",
+            "date": "25-10-2021 00:12"
+        },
+        {
+            "item": "Processor AMD Ryzen 5 3600 OEM",
+            "quantity": 1,
+            "price": 13999,
+            "buyer": "Funny Man",
+            "date": "25-10-2021 00:12"
+        }
+    ]
+}
