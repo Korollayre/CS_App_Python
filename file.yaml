@@ -1,0 +1,10 @@
+headers:
+- Изготовитель системы
+- Название ОС
+- Код продукта
+- Тип системы
+Cyberpunk: 2077
+random_dict:
+    rubles: 199₽
+    dollars: 50$
+    euros: 100€
