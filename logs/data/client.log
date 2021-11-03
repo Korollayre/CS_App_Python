@@ -1,0 +1,8 @@
+2021-11-03 13:04:59,255 INFO       client Запущен клиент со следующими параметрами: адрес - 127.0.0.1, адрес - 8888
+2021-11-03 13:04:59,257 INFO       client Генерация запроса presence пользователя Guest
+2021-11-03 13:04:59,280 INFO       decos Произошел вызов функции user_request со следующими параметрами - (8888,), {}. Вызов произошел из функции main() модуля decos.py
+2021-11-03 13:04:59,281 INFO       decos Произошел вызов функции send_message со следующими параметрами - (<socket.socket fd=388, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59118), raddr=('127.0.0.1', 8888)>, {'action': 'presence', 'time': 1635933899.2575068, 'port': 8888, 'user': {'account_name': 'Guest'}}), {}. Вызов произошел из функции main() модуля decos.py
+2021-11-03 13:04:59,305 INFO       decos Произошел вызов функции get_message со следующими параметрами - (<socket.socket fd=388, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59118), raddr=('127.0.0.1', 8888)>,), {}. Вызов произошел из функции main() модуля decos.py
+2021-11-03 13:04:59,305 INFO       client Принят ответ сервера
+2021-11-03 13:04:59,306 INFO       decos Произошел вызов функции server_response со следующими параметрами - ({'response': 200},), {}. Вызов произошел из функции main() модуля decos.py
+2021-11-03 13:04:59,306 INFO       client Ответ сервера принят: 200 : OK
