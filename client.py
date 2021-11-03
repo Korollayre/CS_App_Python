@@ -10,10 +10,12 @@ from common.variables import ACTION, PRESENCE, PORT, TIME, USER, ACCOUNT_NAME, \
     RESPONSE, ERROR, DEFAULT_IP_ADDRESS, DEFAULT_PORT
 from common.utils import get_message, send_message
 from errors import ReqFieldMissingError
+from decos import Log
 
 CLIENT_LOGGER = logging.getLogger('client')
 
 
+@Log()
 def user_request(port, user_name='Guest'):
     """
     Функция генерирует запрос о присутствии клиента
@@ -33,6 +35,7 @@ def user_request(port, user_name='Guest'):
     return user_data
 
 
+@Log()
 def server_response(response):
     """
     Функция разбирает ответ сервера
