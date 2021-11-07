@@ -21,6 +21,9 @@ TIME = 'time'
 PORT = 'port'
 USER = 'user'
 ACCOUNT_NAME = 'account_name'
+SENDER = 'sender'
+MESSAGE = 'message'
+MESSAGE_TEXT = 'mess_text'
 
 # Прочие ключи, используемые в протоколе
 PRESENCE = 'presence'

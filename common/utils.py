@@ -3,6 +3,7 @@ import json
 
 from decos import Log
 from common.variables import MAX_PACKAGE_LENGTH, ENCODING
+from errors import IncorrectDataRecivedError, NonDictInputError
 
 
 @Log()
@@ -20,8 +21,8 @@ def get_message(client):
         response = json.loads(json_response)
         if isinstance(response, dict):
             return response
-        raise ValueError
-    raise ValueError
+        raise IncorrectDataRecivedError
+    raise IncorrectDataRecivedError
 
 
 @Log()
@@ -34,6 +35,8 @@ def send_message(sock, message):
     :return:
     """
 
+    if not isinstance(message, dict):
+        raise NonDictInputError
     js_message = json.dumps(message)
     encoded_message = js_message.encode(ENCODING)
     sock.send(encoded_message)
