@@ -122,7 +122,7 @@ def main():
             for receiver in send_sockets_list:
                 try:
                     send_message(receiver, message)
-                    SERVER_LOGGER.info(f'Ответ {message} клиенту {receiver[0]} отправлен.')
+                    SERVER_LOGGER.info(f'Ответ {message} клиенту {receiver} отправлен.')
                 except Exception:
                     SERVER_LOGGER.info(f'Соединение с {receiver.getpeername()} разорвано.')
                     receiver.close()
