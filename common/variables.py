@@ -24,6 +24,8 @@ ACCOUNT_NAME = 'account_name'
 SENDER = 'sender'
 MESSAGE = 'message'
 MESSAGE_TEXT = 'mess_text'
+EXIT = 'exit'
+DESTINATION = 'destination'
 
 # Прочие ключи, используемые в протоколе
 PRESENCE = 'presence'
